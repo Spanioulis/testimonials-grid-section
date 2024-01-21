@@ -1,0 +1,25 @@
+:root {
+    /* colors */
+    --dark-blackish: hsl(219, 29%, 14%);
+    --dark-grayish: hsl(217, 19%, 35%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --violet: hsl(263, 55%, 52%);
+    --white: hsl(0, 0%, 100%);
+
+    /* font */
+    --font-stack: 'Barlow Semi Condensed', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 1440px;
+    padding: 0;
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: var(--font-stack);
+    font-size: 13px;
+}
