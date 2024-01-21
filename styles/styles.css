@@ -22,4 +22,24 @@ body {
     background-color: var(--light-gray);
     font-family: var(--font-stack);
     font-size: 13px;
+    padding: 2rem;
+}
+
+footer {
+    text-align: center;
+}
+
+.pt-1 {
+    padding-top: 1em;
+}
+
+.card {
+    border-radius: 20px;
+    /* TODO: Eliminar */
+    border: 1px solid black;
+    padding: 1em;
+}
+
+.card__image {
+    border-radius: 50%;
 }
