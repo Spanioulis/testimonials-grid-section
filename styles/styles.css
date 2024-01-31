@@ -23,11 +23,12 @@ body {
     background-color: var(--background);
     font-family: var(--font-stack);
     font-size: 13px;
+    font-weight: 500;
 }
 
 footer {
     text-align: center;
-    padding-top: 1em;
+    padding: 1em;
 }
 
 /* Color styles */
@@ -56,7 +57,13 @@ footer {
     flex-direction: column;
     gap: 10px;
     justify-content: space-between;
-    padding: 3em 2.5em;
+    padding: 2.2em 2.5em;
+}
+
+.quotation {
+    background-image: url('../images/bg-pattern-quotation.svg');
+    background-position: 80% 0%;
+    background-repeat: no-repeat;
 }
 
 .card__title {
@@ -124,11 +131,16 @@ footer {
     grid-row: 2;
 }
 
+/* Media queries */
 @media screen and (max-width: 600px) {
     .s-grid {
-        padding: 4rem 1rem;
+        padding: 3rem 1rem 2rem 1rem;
         grid-template-columns: 1fr;
         grid-gap: 1rem;
+    }
+
+    .quotation {
+        background-position: 95% 0%;
     }
 
     /* Card 1 */
@@ -146,18 +158,18 @@ footer {
     /* Card 3 */
     .card:nth-child(3) {
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 5;
     }
 
     /* Card 4 */
     .card:nth-child(4) {
         grid-column: 1;
-        grid-row: 4;
+        grid-row: 3;
     }
 
     /* Card 5 */
     .card:nth-child(5) {
         grid-column: 1;
-        grid-row: 5;
+        grid-row: 4;
     }
 }
