@@ -31,6 +31,14 @@ footer {
     padding: 1em;
 }
 
+h2 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
+
 /* Color styles */
 .light-gray {
     color: var(--light-gray);
